@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+header .container,
+main .container,
+footer .container,
+nav,
+#branding {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem 0 2rem;    
+}
+
+nav a:hover,
+nav a:focus,
+.staff-contact:hover,
+.staff-contact:focus {
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+    cursor: pointer;
+}
+
+.send:hover,
+.send:focus {
+    border: 2px solid black;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    cursor: pointer;
+}
+
+h3:hover,
+h3:focus {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}
+
+/* .houses:hover,
+.houses:focus {
+    filter: grayscale(95%);
+} */
+
+                    /* ========================================================= */
+                    /* |            H E A D E R        S T Y L E S             | */
+                    /* ========================================================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 1rem 0 1.2rem 2rem;
+    background-color: white;
+    box-shadow: 0px 3px 6px rgb(197, 197, 197);
+}
+
+nav a {
+    padding: .5rem;
+    border-radius: 20px;
+}
+
+.architects,
+.menu {
+    display: none;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    letter-spacing: 3.55px;
+}
+
+.logo span {
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+#branding {
+    width: 100%;
+    height: 152px;
+    background-image: url(images/architect.jpg);
+    background-size: cover;
+    background-position: bottom;
+    font-size: 1.5rem;
+    letter-spacing: 4.5px;
+    margin: 3rem auto 4.5rem;
+}
+
+.br {
+    position: relative;
+    top: 55px;
+    left: 95px;
+    font-size: 2.2rem;
+    font-family: Verdana;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: .4rem 1rem .6rem 1rem;
+    opacity: .75;
+}
+
+img {
+    width: 100%;
+}
+
+                    /* ========================================================= */
+                    /* |                M A I N        S T Y L E S             | */
+                    /* ========================================================= */
+
+.border{
+    border-bottom: 1px solid rgba(180, 180, 180, 0.2);
+    margin: 1rem 0 4.5rem;
+}
+
+                                    /* ========= PROJECTS ========= */
+
+h1{
+    font-size: 1.438rem;
+}
+#projects {
+    margin-bottom: 2.5rem;
+}
+
+.house-images{
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: -1.6rem   
+}
+
+.house-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.house-tags {
+    width: 50%;
+}
+
+.house-tags a{
+    display: inline-block;
+    position: relative;
+    bottom: 274px;
+    padding: .6rem;
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+                                    /* ========= ABOUT ========= */
+
+#about {
+    margin-bottom: 4rem;
+}
+
+.about-content {
+    font-size: 1.05rem;
+    line-height: 135%;
+    margin: -3.5rem 0 2.5rem;
+}
+
+.profile h2 {
+    margin-top: 1rem;
+}
+
+.profile h3 {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: rgba(32, 32, 32, .5);
+}
+
+.profile p {
+    margin-top: 1rem;
+}
+
+.profile img {
+    filter: grayscale(75%);
+}
+
+.staff-contact {
+    width: 100%;
+    height: 37px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    margin: 1rem 0 2rem;
+}
+
+                                    /* ========= Contact ========= */
+
+#contact h2 {
+    margin-bottom: 2rem;
+}
+
+#name,
+#email,
+#subject,
+#comment {
+    border-color: hsla(0,0%,72%,1);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 1rem;
+    height: 38px;
+    width: 100%;
+    resize: none;
+}
+
+::placeholder {
+    color: hsl(0, 0%, 55%);
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.send {
+    border: none;
+    background-color: black;
+    color: white;
+    width: 155px;
+    height: 39px;
+    font-size: .9rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+#contact img {
+    margin-top: 3rem
+}
+
+                    /* ========================================================= */
+                    /* |            F O O T E R        S T Y L E S             | */
+                    /* ========================================================= */
+
+footer {
+    margin-top: .3rem;
+    background-color: black;
+    padding-top: 2rem;
+}
+
+@media only screen and (min-width: 500px){
+    .architects {
+        display: initial;
+        font-size: 2.3rem;
+        color: white;
+    }
+
+    .menu {
+        display: initial;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.2rem 1.2rem 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        letter-spacing: 3.5px;
+        font-size: .8rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    .menu li {
+        display: inline;
+    }
+
+    #branding span{
+        position: relative;
+        top: 50px;
+        left: 60px;
+    }
+
+    #projects h3{
+        position: relative;
+        bottom: 279px;
+        padding: .6rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 650px) { /*==================================================*/
+
+                    /* ========================================================= */
+                    /* |            H E A D E R        S T Y L E S             | */
+                    /* ========================================================= */   
+    
+    .border{
+        border-bottom: 1px solid rgba(180, 180, 180, 0.2);
+        margin: 1rem 0 4.5rem;
+    }
+
+    .architects,
+    .menu {
+        display: initial;
+    }
+
+    nav a {
+        font-size: 1rem;
+        letter-spacing: 4.5px;
+        font-size: 1rem;
+    }
+
+    .menu li {
+        padding: .5rem;
+        margin: .5rem;
+    }
+
+    .logo a {
+        letter-spacing: 5px;
+    }
+
+    #branding {
+        width: 100%;
+        height: 300px;
+        font-size: 1.5rem;
+        letter-spacing: 4.5px;
+    }
+
+    #branding span{
+        position: relative;
+        top: 125px;
+        left: 180px;
+    }
+
+    .br {
+        font-size: 2rem;
+        padding: .4rem .6rem .6rem 1.1rem;
+        opacity: .75;
+    }
+
+    .architects {
+        font-size: 2.3rem;
+        color: white;
+    }
+
+                                        /* ========= PROJECTS ========= */
+
+    .house-images{
+        display: flex;
+        flex-flow: row nowrap;
+        /* justify-content: space-between;  */
+    }
+
+    .house-photo{
+        width: 45%;
+        /* flex-basis: 25%; */
+    }
+
+                                        /* ========= ABOUT ========= */
+
+    #about div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .profile {
+        flex-basis: 48.5%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+
+    #branding {
+        width: 100%;
+        height: 465px;
+        font-size: 1.5rem;
+        letter-spacing: 4.5px;
+    }
+
+    #branding span{
+        position: relative;
+        top: 200px;
+        left: 335px;
+    }
+
+    #projects h3{
+        display: inline-block;
+        position: relative;
+        bottom: 304px;
+        padding: .6rem;
+    }
+
+    .houses{
+        flex-basis: 49%;
+    }
+
+                                        /* ========= ABOUT ========= */
+
+    .profile {
+        flex-basis: 49%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #branding {
+        width: 100%;
+        height: 633px;
+        letter-spacing: 4.5px;
+    }
+
+    #branding span{
+        position: relative;
+        top: 285px;
+        left: 460px;
+        font-size: 2.1rem;
+    }
+
+    #projects {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .houses{
+        flex-basis: 100%;
+    }
+
+    #projects h3{
+        position: relative;
+        bottom: 204px;
+        padding: .6rem;
+        font-size: 1rem;
+    }
+
+    #about div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .profile {
+        flex-basis: 24%;
+    }
+
+    
+}
